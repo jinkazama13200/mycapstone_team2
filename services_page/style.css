@@ -100,6 +100,7 @@ header .header_logo a span.second_text {
 /* SERVICES  */
 .services {
   background-color: #f7f7f7;
+  padding: 100px 0;
 }
 /* title  */
 .services .services_title p {
@@ -147,3 +148,279 @@ header .header_logo a span.second_text {
 .services .services_content .content_left button:hover {
   background-color: #007c3c;
 }
+
+/* SOLUTION 1  */
+.solution_1 {
+  padding: 100px 0;
+}
+/* title  */
+.solution_1 .sol_title p {
+  color: grey;
+  font-weight: 600;
+}
+.solution_1 .sol_title h3 {
+  color: #3f3a64;
+  font-size: 35px;
+  font-weight: 600;
+}
+/* content  */
+.solution_1 .sol_item_box {
+  background-color: #f8f9fa;
+  display: flex;
+  padding: 50px 40px;
+  gap: 30px;
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.solution_1 .sol_item_box .sol_item_icon span {
+  display: inline-block;
+  font-size: 40px;
+  color: #009f4d;
+}
+.solution_1 .sol_item_box .sol_item_text a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #3f3a64;
+  display: block;
+  transition: all 0.5s;
+}
+.solution_1 .sol_item_box .sol_item_text a:hover {
+  color: #009f4d;
+}
+.solution_1 .sol_item_box .sol_item_text p {
+  color: grey;
+  padding-top: 10px;
+}
+
+/* CONTACT */
+.contact {
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  padding: 80px 0;
+}
+.contact::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29 42 55 / 70%);
+  z-index: -1;
+}
+/* left part  */
+.contact .contact_left {
+  padding-top: 50px;
+  padding-right: 70px;
+}
+.contact .contact_left .left_title {
+  margin-bottom: 30px;
+}
+.contact .contact_left .left_title p {
+  font-weight: 600;
+}
+.contact .contact_left .left_title h3 {
+  font-weight: 600;
+  font-size: 35px;
+}
+.contact .contact_left .left_item {
+  margin-bottom: 20px;
+}
+.contact .contact_left .left_item.second {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.contact .contact_left .left_item.second .left_item_text a {
+  text-decoration: none;
+  color: rgb(211, 210, 210);
+  transition: all 0.5s;
+}
+.contact .contact_left .left_item.second .left_item_text a:hover {
+  color: rgb(235, 235, 235);
+}
+.contact .contact_left .left_item.third .left_item_text a {
+  text-decoration: none;
+  color: rgb(211, 210, 210);
+  transition: all 0.5s;
+
+}
+.contact .contact_left .left_item.third .left_item_text a:hover {
+  color: rgb(235, 235, 235);
+}
+
+.contact .contact_left .left_item .left_item_text h5 {
+  color: white;
+}
+.contact .contact_left .left_item .left_item_text p {
+  color: rgb(211, 210, 210);
+  font-size: 18px;
+}
+/* right part  */
+.contact .contact_right {
+  background-color: white;
+  border-radius: 10px;
+  padding: 70px;
+}
+.contact .contact_right .right_title h4 {
+  color: #3f3a64;
+  font-size: 28px;
+}
+.contact .contact_right .right_title p {
+  color: grey;
+}
+.contact .contact_right .right_title {
+  margin-bottom: 30px;
+}
+/* FORM part */
+.contact .contact_right .right_form form input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: #f7f7f7;
+  outline: none;
+  margin-bottom: 10px;
+}
+.contact .contact_right .right_form form textarea {
+  padding: 20px;
+  background-color: #f7f7f7;
+  outline: none;
+  width: 100%;
+  border: none;
+  margin-bottom: 30px;
+}
+.contact .contact_right .right_form form button {
+  padding: 10px 40px;
+  border: none;
+  background-color: #009f4d;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.contact .contact_right .right_form form button:hover {
+  background-color: #008540;
+}
+
+/* SOLUTION 2  */
+.solution_2 {
+  background-color: #F7F7F7;
+  padding: 100px 0;
+}
+/* title  */
+.solution_2 .sol2_title {
+  margin-bottom: 50px;
+}
+.solution_2 .sol2_title p {
+  font-weight: 600;
+  color: #7E7D7D;
+}
+.solution_2 .sol2_title h3 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #3f3a64;
+}
+/* content  */
+.solution_2 .sol2_content .sol2_item .sol2_item_box {
+  padding:40px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.5s;
+}
+.solution_2 .sol2_content .sol2_item .sol2_item_box:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.solution_2 .sol2_content .sol2_item .sol2_item_box a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  color:#3f3a64;
+  padding: 20px;
+  transition: all 0.5s;
+}
+.solution_2 .sol2_content .sol2_item .sol2_item_box a:hover {
+  color: #009f4d;
+}
+.solution_2 .sol2_content .sol2_item .sol2_item_box p {
+  color: #666666;
+}
+
+/* FOOTER  */
+footer {
+  background-color: #151421;
+}
+
+/* middle part */
+.footer_middle .middle_content .middle_icon a span.logo_text {
+  font-size: 30px;
+  font-weight: bold;
+}
+.footer_middle .middle_content .middle_icon a span.second_text {
+  font-size: 14px;
+  padding-left: 40px;
+}
+.footer_middle .middle_content_ul ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer_middle_main .middle_content a.brand_logo {
+  color: grey;
+  transition: all 0.5s;
+}
+.footer_middle_main .middle_content a.brand_logo:hover {
+  color: white;
+}
+.footer_middle_main .middle_content_ul ul li a {
+  color: grey;
+  transition: all 0.5s;
+}
+.footer_middle_main .middle_content_ul ul li a:hover {
+  color: white;
+}
+.footer_middle {
+  border-top: 1px solid rgba(128, 128, 128, 0.39);
+}
+/* footer copyright part  */
+.footer_copyright {
+  border-top: 1px solid rgba(128, 128, 128, 0.39);
+}
+.footer_copyright p a {
+  color: #009f4d;
+  transition: all 0.5s;
+}
+.footer_copyright p a:hover {
+  color: white;
+}
+
+/* back to top  */
+a.back_to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #009f4d;
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+.cd-top {
+  visibility: hidden;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 1;
+}
+
+
