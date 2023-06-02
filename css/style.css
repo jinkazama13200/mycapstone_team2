@@ -62,6 +62,13 @@ header .header_logo a span.second_text {
   font-size: 14px;
   padding-left: 40px;
 }
+/* dropdown item active a  */
+.dropdown-item {
+  transition: all 0.5s;
+}
+.dropdown-item:hover {
+  color: #3f3a64 !important;
+}
 
 /* CAROUSEL  */
 .carousel {
