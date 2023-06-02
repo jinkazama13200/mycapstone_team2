@@ -33,7 +33,8 @@ header {
   width: 20%;
 }
 /* HEADER NAV BAR  */
-.header_main .header_nav .header_search {
+.header_main .header_nav .header_search span {
+  display: inline-block;
   font-size: 15px;
   width: 40px;
   height: 40px;
@@ -175,7 +176,7 @@ header .header_logo a span.second_text {
 .cont2_content form textarea {
   width: 100%;
   margin: 30px 0;
-  padding:20px ;
+  padding: 20px;
   resize: none;
 }
 .cont2_content form button {
@@ -254,3 +255,67 @@ a.back_to_top {
 .cd-top--fade-out {
   opacity: 1;
 }
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* darklight theme  */
+/* light theme  */
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* dark theme  */
+.dark#myMain {
+  background-color: black;
+}
+
+
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* BANNER part  */
+.dark .banner_overlay {
+  background: rgba(29, 42, 55, 0.781);
+}
+/* CONTACT 1 part  */
+.dark .contact_1 {
+  background-color: black;
+}
+.dark .cont1_title h3 {
+  color: white;
+}
+.dark .cont1_icon span {
+  color: white;
+}
+.dark .cont1_item .cont1_item_box .cont1_text h4 {
+  color: white;
+}
+.dark .cont1_item .cont1_item_box {
+  background-color:#151421;
+}
+.dark .cont1_item .cont1_item_box .cont1_text a:hover {
+  color: white !important;
+}
+/* CONTACT 2 part  */
+.dark .contact_2 {
+  background-color:black;
+}
+.dark .contact_2 .cont2_title h3 {
+  color: white;
+}
+.dark .form-control {
+  background-color: #151421;
+  border:1px solid transparent;
+  outline:none;
+  transition: all 0.5s;
+  
+}
+.dark .form-control:hover {
+  border: 1px solid white;
+}
+
