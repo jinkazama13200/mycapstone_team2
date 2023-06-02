@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body>
+  <body id="myMain">
     <!-- HEADER  -->
     <header class="py-3 text-white">
       <div class="container">
@@ -144,7 +144,19 @@
             </div>
             <!-- SEARCH  -->
             <div class="header_search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <!-- search icon  -->
+              <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <!-- Button  -->
+              <button
+                id="switchButton"
+                class="btn fs-4 text-white border-0"
+                title="Click to switch theme"
+              >
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-regular fa-moon"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -615,7 +627,7 @@
           </div>
         </div>
         <!-- bottom part  -->
-        <div class="us_bottom bg-white">
+        <div class="us_bottom">
           <div class="container">
             <div
               class="us_bottom_content d-flex justify-content-around align-items-center"
@@ -836,5 +848,8 @@
         mainClass: "zoom_in_popup",
       });
     </script>
+
+    <!-- dark light theme script  -->
+    <script src="../js/light-dark-theme/index.js"></script>
   </body>
 </html>

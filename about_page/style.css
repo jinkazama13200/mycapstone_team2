@@ -33,7 +33,8 @@ header {
   width: 20%;
 }
 /* HEADER NAV BAR  */
-.header_main .header_nav .header_search {
+.header_main .header_nav .header_search span {
+  display: inline-block;
   font-size: 15px;
   width: 40px;
   height: 40px;
@@ -694,6 +695,88 @@ a.back_to_top {
 .cd-top--fade-out {
   opacity: 1;
 }
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* darklight theme  */
+/* light theme  */
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+/* dark theme  */
+
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* BANNER part  */
+.dark .banner_overlay {
+  background: rgba(29, 42, 55, 0.781);
+}
+/* COMPANY part  */
+.dark .company {
+  background-color: #151421;
+}
+.dark .company_top .company_right h3 {
+  color: white;
+}
+.dark .company_top .company_right p.second_title {
+  color: white;
+}
+.dark .company_bottom .bottom_item {
+  background-color: black;
+}
+.dark .company_bottom .bottom_item .bottom_item_text a {
+  color: white;
+}
+/* MARKETING part  */
+.dark .marketing {
+  background-color: #000000;
+}
+.dark .marketing .marketing_main .marketing_left .left_title h3 {
+  color:white;
+}
+.dark .marketing_main .marketing_left .left_content .left_content_item h4 {
+  color: white;
+}
+/* TEAM part  */
+.dark .team {
+  background-color: #151421;
+}
+.dark .team .team_title h3 {
+  color:white;
+}
+.dark .team_content .team_item .team_text a {
+  color:white;
+}
+.dark .team_content .team_item .team_text a:hover {
+  color: rgb(0, 159, 77);
+}
+/* US part  */
+.dark .us {
+  background-color: #000000;
+}
+.dark .us_bottom {
+  background-color: #151421;
+}
+.dark .us .us_top .us_top_title h3 {
+  color: white;
+}
+.dark .us .us_top .us_top_item .us_top_item_text a {
+  color: white;
+}
+.dark .us .us_top .us_top_item .us_top_item_text a:hover {
+  color: rgb(0, 159, 77);
+}
+.dark .us_bottom .us_bottom_content .us_bottom_left h3 {
+  color: white;
+}
+
+
 
 
 
