@@ -46,15 +46,14 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body>
+  <body id="myMain">
     <!-- HEADER  -->
-    <header class="py-3 text-white">
+    <header id="myHeader" class="py-3 text-white">
       <div class="container">
-        <div class="header_main">
-          <!-- logo -->
-          <div class="header_logo">
-            <!-- icon -->
-            <a href="#" class="text-white text-decoration-none">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- header logo -->
+            <a href="#" class="navbar-brand text-white text-decoration-none">
               <i class="fa-solid fa-align-right fs-4 text-success"></i>
               <span class="logo_text"
                 >Corp Vision
@@ -63,15 +62,24 @@
                 </span></span
               >
             </a>
-          </div>
-          <!-- NAV  -->
-          <div class="header_nav">
-            <!-- NAV bar  -->
-            <div class="header_navbar">
-              <ul class="nav">
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <!-- header nav  -->
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a
-                    class="nav-link text-white fw-bold text-uppercase"
+                    class="nav-link text-secondary fw-bold text-uppercase"
                     aria-current="page"
                     href="#"
                     >home</a
@@ -140,19 +148,31 @@
                   >
                 </li>
               </ul>
-            </div>
-            <!-- SEARCH  -->
-            <div class="header_search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <!-- SEARCH  -->
+              <div class="header_search">
+                <!-- search icon  -->
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <!-- Button  -->
+                <button
+                  id="switchButton"
+                  class="btn fs-4 text-white border-0"
+                  title="Click to switch theme"
+                >
+                  <i class="fa-regular fa-sun"></i>
+                  <i class="fa-regular fa-moon"></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
 
     <main>
       <!-- BANNER  -->
-      <section class="banner">
+      <section class="banner col-xs-12">
         <div class="container">
           <!-- text  -->
           <div class="banner_text text-center">
@@ -207,11 +227,9 @@
       <!-- footer middle  -->
       <div class="footer_middle">
         <div class="container">
-          <div
-            class="footer_middle_main py-5 d-flex justify-content-around align-items-baseline gap-5"
-          >
+          <div class="footer_middle_main py-5 row align-items-baseline gx-5">
             <!-- content list  -->
-            <div class="middle_content w-50">
+            <div class="middle_content col-3">
               <!-- logo icon  -->
               <div class="middle_icon">
                 <a href="#" class="text-white text-decoration-none">
@@ -243,7 +261,7 @@
               </a>
             </div>
             <!-- content list ul -->
-            <div class="middle_content_ul w-50">
+            <div class="middle_content_ul second col-3">
               <h3 class="text-white fw-light mb-4">CONTACT INFO</h3>
               <ul class="text-secondary">
                 <li class="fs-5 lh-lg">
@@ -274,7 +292,7 @@
               </ul>
             </div>
             <!-- content list ul -->
-            <div class="middle_content_ul w-25">
+            <div class="middle_content_ul col-3">
               <h3 class="text-white fw-light mb-4">CATEGORIES</h3>
               <ul class="text-secondary">
                 <li class="fs-5 lh-lg">
@@ -291,7 +309,7 @@
               </ul>
             </div>
             <!-- content list ul -->
-            <div class="middle_content_ul w-25">
+            <div class="middle_content_ul col-3">
               <h3 class="text-white fw-light mb-4">META</h3>
               <ul class="text-secondary">
                 <li class="fs-5 lh-lg">
@@ -338,5 +356,8 @@
     <!-- back to top script  -->
     <script src="../js/back-to-top-master/assets/js/main.js"></script>
     <script src="../js/back-to-top-master/assets/js/util.js"></script>
+
+    <!-- dark light theme script  -->
+    <script src="../js/light-dark-theme/index.js"></script>
   </body>
 </html>
