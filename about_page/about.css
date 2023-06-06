@@ -12,28 +12,31 @@ body {
 /* HEADER  */
 header {
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  height: 120px;
+  z-index: 10;
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+  transition: all 0.5s;
 }
-.header_main {
-  display: flex;
-  align-items: center;
-}
-.header_main .header_nav {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.header_main .header_logo {
-  width: 20%;
-}
+
 /* HEADER NAV BAR  */
-.header_main .header_nav .header_search span {
+#navbarNavDropdown {
+  justify-content: space-between;
+}
+.navbar-nav {
+  margin-left: 200px;
+}
+.header_search {
+  position: relative;
+}
+/* search button  */
+.header_search .search-btn .icon-search {
+  transition: all 0.5s ease-in-out;
+}
+.header_search .search-btn {
   display: inline-block;
   font-size: 15px;
   width: 40px;
@@ -43,33 +46,93 @@ header {
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.5s;
 }
-.header_main .header_nav .header_navbar .nav .nav-item .nav-link.active {
+/* close button  */
+.header_search .close-btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: -55px;
+  opacity:0;
+  cursor: pointer;
+  pointer-events: none;
+  transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
+  
+}
+/* input search  */
+header form .search-input {
+  color: white;
+  outline: none;
+  font-size: 50px;
+  border: none;
+  padding: 20px;
+  margin-left: 200px;
+  width: 50%;
+  top: calc(100% + 198px);
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  background-color: transparent;
+  transition: all 0.5s;
+  transform: translateX(100px);
+}
+/* search bar willl open when click on search btn  */
+body.nav-search .header_search .search-btn {
+  transform: scale(80);
+}
+body.nav-search .header_search .search-btn .icon-search {
+  opacity:0;
+}
+/* search bar will close when click on search close  */
+body.nav-search .header_search .close-btn {
+  opacity: 1;
+  pointer-events: all;
+  transform: rotate(0);
+  
+}
+body.nav-search header form .search-input {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+
+}
+
+.navbar-nav .nav-item .nav-link.active {
   color: white !important;
 }
-.header_main .header_nav .header_navbar .nav .nav-item .nav-link {
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+.navbar-nav .nav-item .nav-link {
   color: rgb(211, 208, 208) !important;
   transition: all 0.5s;
 }
-.header_main .header_nav .header_navbar .nav .nav-item .nav-link:hover {
+.navbar-nav .nav-item .nav-link:hover {
   color: white !important;
 }
 
 /* header logo  */
-header .header_logo a span.logo_text {
+a span.logo_text {
   font-size: 30px;
   font-weight: bold;
 }
-header .header_logo a span.second_text {
+a span.second_text {
   font-size: 14px;
   padding-left: 40px;
 }
+
 /* dropdown item active a  */
 .dropdown-item {
   transition: all 0.5s;
 }
 .dropdown-item:hover {
   color: #3f3a64 !important;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent;
 }
 
 /* BANNER  */
@@ -775,6 +838,43 @@ a.back_to_top {
 .dark .us_bottom .us_bottom_content .us_bottom_left h3 {
   color: white;
 }
+/* scroll function  */
+.scrollTop {
+  background-color: white;
+  height: 100px;
+  top: -20px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+.scrollTop .navbar-nav .nav-item .nav-link.active {
+  color: #009f4d !important;
+}
+.scrollTop span.logo_text {
+  color: #3f3a64;
+}
+.scrollTop .navbar-nav .nav-item .nav-link {
+  color: #3f3a64 !important;
+}
+.scrollTop #switchButton {
+  color: #3f3a64 !important;
+}
+/* channge text and bg when in dark theme */
+.dark .scrollTop {
+  background-color: black;
+}
+.dark .scrollTop .navbar-nav .nav-item .nav-link.active {
+  color: #009f4d !important;
+}
+.dark .scrollTop .navbar-nav .nav-item .nav-link {
+  color: rgb(211, 208, 208) !important;
+}
+.dark .scrollTop #switchButton {
+  color: white !important;
+}
+.dark .scrollTop span.logo_text {
+  color: white;
+}
+
 
 
 
