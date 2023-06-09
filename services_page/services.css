@@ -187,7 +187,6 @@ a span.second_text {
 }
 /* content  */
 .services .services_content .content_left {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 63px 50px;
 }
 
@@ -243,7 +242,6 @@ a span.second_text {
   gap: 30px;
   border-radius: 5px;
   justify-content: center;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .solution_1 .sol_item_box .sol_item_icon span {
@@ -401,7 +399,6 @@ a span.second_text {
 .solution_2 .sol2_content .sol2_item .sol2_item_box {
   padding:40px 30px;
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 0.5s;
 }
 .solution_2 .sol2_content .sol2_item .sol2_item_box:hover {
@@ -553,5 +550,72 @@ a.back_to_top {
 .dark .banner_overlay {
   background: rgba(29, 42, 55, 0.781);
 }
-
-
+/* SERVICES  */
+.dark .services {
+  background-color: #100F19;
+}
+.dark .services .services_title h3 {
+  color: white;
+}
+.dark .services .services_content .content_left {
+  background-color: #151421 !important;
+}
+.dark .services .services_content .content_left h3 {
+  color: white;
+}
+.dark .services .services_content .content_left p {
+  color: #C2C2C2;
+}
+/* SOLUTION 1  */
+.dark .solution_1 {
+  background-color: #151421;
+}
+.dark .solution_1 .sol_title h3 {
+  color: white;
+}
+.dark .solution_1 .sol_item_box {
+  background-color: #100F19;
+}
+.dark .solution_1 .sol_item_box .sol_item_text a {
+  color: white;
+}
+.dark .solution_1 .sol_item_box .sol_item_text a:hover {
+  color: #007826;
+}
+/* CONTACT  */
+.dark .contact::before {
+  background-color: rgb(29 42 55 / 80%);
+}
+.dark .contact .contact_right {
+  background-color: #151421;
+}
+.dark .contact .contact_right .right_title h4 {
+  color: white;
+}
+.dark .contact .contact_right .right_form form input {
+  color: white;
+  background-color: #100F19;
+}
+.dark .contact .contact_right .right_form form textarea {
+  color: white;
+  background-color: #100F19;
+}
+/* SOLUTION 2  */
+.dark .solution_2 {
+  background-color: #100F19;
+}
+.dark .solution_2 .sol2_title h3 {
+  color: white;
+}
+.dark .solution_2 .sol2_content .sol2_item .sol2_item_box {
+  background-color: #151421 !important;
+}
+.dark .solution_2 .sol2_content .sol2_item .sol2_item_box a {
+  color: white;
+}
+.dark .solution_2 .sol2_content .sol2_item .sol2_item_box a:hover {
+  color: #007826;
+}
+.dark .solution_2 .sol2_content .sol2_item .sol2_item_box p {
+  color: #C2C2C2;
+}
