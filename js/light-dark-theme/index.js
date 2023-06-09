@@ -5,13 +5,23 @@ document.getElementById("switchButton").onclick = function () {
 
 // Scroll Function for Header
 window.onscroll = function () {
-  myFunction();
+  scrolltopNav();
 };
 
-function myFunction() {
+function scrolltopNav() {
   if (document.documentElement.scrollTop > 50) {
     document.getElementById("myHeader").classList.add("scrollTop");
   } else {
     document.getElementById("myHeader").classList.remove("scrollTop");
   }
 }
+
+//search active nav
+document.getElementById("searchActive").onclick = function () {
+  document.getElementById("myMain").classList.add("nav-search");
+};
+
+// search close button in Nav
+document.getElementById("searchClose").onclick = function () {
+  document.getElementById("myMain").classList.remove("nav-search");
+};
