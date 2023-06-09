@@ -514,7 +514,7 @@ a.back_to_top {
 }
 /* channge text and bg when in dark theme */
 .dark .scrollTop {
-  background-color: black;
+  background-color: #151421;
 }
 .dark .scrollTop .navbar-nav .nav-item .nav-link.active {
   color: #009f4d !important;

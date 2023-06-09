@@ -15,12 +15,12 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  height: 120px;
+  z-index: 10;
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.568);
   transition: all 0.5s;
 }
-
 
 /* HEADER NAV BAR  */
 #navbarNavDropdown {
@@ -29,8 +29,15 @@ header {
 .navbar-nav {
   margin-left: 200px;
 }
-.header_search span {
-  display:inline-block;
+.header_search {
+  position: relative;
+}
+/* search button  */
+.header_search .search-btn .icon-search {
+  transition: all 0.5s ease-in-out;
+}
+.header_search .search-btn {
+  display: inline-block;
   font-size: 15px;
   width: 40px;
   height: 40px;
@@ -39,7 +46,59 @@ header {
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.5s;
 }
+/* close button  */
+.header_search .close-btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: -55px;
+  opacity:0;
+  cursor: pointer;
+  pointer-events: none;
+  transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
+  
+}
+/* input search  */
+header form .search-input {
+  color: white;
+  outline: none;
+  font-size: 50px;
+  border: none;
+  padding: 20px;
+  margin-left: 200px;
+  width: 50%;
+  top: calc(100% + 198px);
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  background-color: transparent;
+  transition: all 0.5s;
+  transform: translateX(100px);
+}
+/* search bar willl open when click on search btn  */
+body.nav-search .header_search .search-btn {
+  transform: scale(80);
+}
+body.nav-search .header_search .search-btn .icon-search {
+  opacity:0;
+}
+/* search bar will close when click on search close  */
+body.nav-search .header_search .close-btn {
+  opacity: 1;
+  pointer-events: all;
+  transform: rotate(0);
+  
+}
+body.nav-search header form .search-input {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+
+}
+
 .navbar-nav .nav-item .nav-link.active {
   color: white !important;
 }
@@ -86,12 +145,12 @@ a.dropdown-item.active {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   position: relative;
 }
 .banner .banner_text {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -115,7 +174,7 @@ a.dropdown-item.active {
 
 /* CONTENT  */
 .error_content {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 .error_cover {
   max-width: 900px;
@@ -171,97 +230,97 @@ a.dropdown-item.active {
 }
 /* FOOTER  */
 footer {
-    background-color: #151421;
-  }
-  
-  /* middle part */
-  .footer_middle .middle_content .middle_icon a span.logo_text {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .footer_middle .middle_content .middle_icon a span.second_text {
-    font-size: 14px;
-    padding-left: 40px;
-  }
-  .footer_middle .middle_content_ul ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  .footer_middle_main .middle_content a.brand_logo {
-    color: grey;
-    transition: all 0.5s;
-  }
-  .footer_middle_main .middle_content a.brand_logo:hover {
-    color: white;
-  }
-  .footer_middle_main .middle_content_ul ul li a {
-    color: grey;
-    transition: all 0.5s;
-  }
-  .footer_middle_main .middle_content_ul ul li a:hover {
-    color: white;
-  }
-  .footer_middle {
-    border-top: 1px solid rgba(128, 128, 128, 0.39);
-  }
-  /* footer copyright part  */
-  .footer_copyright {
-    border-top: 1px solid rgba(128, 128, 128, 0.39);
-  }
-  .footer_copyright p a {
-    color: #009f4d;
-    transition: all 0.5s;
-  }
-  .footer_copyright p a:hover {
-    color: white;
-  }
-  
-  /* back to top  */
-  a.back_to_top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #009f4d;
-    width: 50px;
-    height: 50px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-  }
-  .cd-top {
-    visibility: hidden;
-  }
-  .cd-top--is-visible {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .cd-top--fade-out {
-    opacity: 1;
-  }
+  background-color: #151421;
+}
 
-  /* dark light theme  */
-  #switchButton .fa-sun {
-    display:none;
-  }
-  #switchButton .fa-moon {
-    display: block;
-  }
+/* middle part */
+.footer_middle .middle_content .middle_icon a span.logo_text {
+  font-size: 30px;
+  font-weight: bold;
+}
+.footer_middle .middle_content .middle_icon a span.second_text {
+  font-size: 14px;
+  padding-left: 40px;
+}
+.footer_middle .middle_content_ul ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer_middle_main .middle_content a.brand_logo {
+  color: grey;
+  transition: all 0.5s;
+}
+.footer_middle_main .middle_content a.brand_logo:hover {
+  color: white;
+}
+.footer_middle_main .middle_content_ul ul li a {
+  color: grey;
+  transition: all 0.5s;
+}
+.footer_middle_main .middle_content_ul ul li a:hover {
+  color: white;
+}
+.footer_middle {
+  border-top: 1px solid rgba(128, 128, 128, 0.39);
+}
+/* footer copyright part  */
+.footer_copyright {
+  border-top: 1px solid rgba(128, 128, 128, 0.39);
+}
+.footer_copyright p a {
+  color: #009f4d;
+  transition: all 0.5s;
+}
+.footer_copyright p a:hover {
+  color: white;
+}
 
-  .dark #switchButton .fa-sun {
-    display: block;
-  }
-  .dark #switchButton .fa-moon {
-    display: none;
-  }
-  /* BANNER part  */
+/* back to top  */
+a.back_to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #009f4d;
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+.cd-top {
+  visibility: hidden;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 1;
+}
+
+/* dark light theme  */
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+
+.dark #switchButton .fa-sun {
+  display: block;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+/* BANNER part  */
 .dark .banner_overlay {
   background: rgba(29, 42, 55, 0.781);
 }
 /* CONTENT part  */
 .dark .error_content {
-  background-color: #100F19;
+  background-color: #100f19;
 }
 .dark .error_main .right_content h3 {
   color: white;
@@ -272,19 +331,17 @@ footer {
 .dark .error_main .right_content form input {
   background-color: #151421;
   color: white;
-  
 }
 /* scroll function  */
 .scrollTop {
-  background-color:  white;
+  background-color: white;
   height: 100px;
-  top:-20px;
+  top: -20px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  
 }
 .scrollTop .navbar-nav .nav-item .nav-link.active {
-  color: #009F4D !important;
+  color: #009f4d !important;
 }
 .scrollTop span.logo_text {
   color: #3f3a64;
@@ -293,22 +350,21 @@ footer {
   color: #3f3a64 !important;
 }
 .scrollTop #switchButton {
-  color:#3f3a64 !important;
+  color: #3f3a64 !important;
 }
 /* channge text and bg when in dark theme */
 .dark .scrollTop {
-  background-color:black;
+  background-color: #151421;
 }
 .dark .scrollTop .navbar-nav .nav-item .nav-link.active {
-  color: #009F4D !important;
+  color: #009f4d !important;
 }
 .dark .scrollTop .navbar-nav .nav-item .nav-link {
   color: rgb(211, 208, 208) !important;
 }
 .dark .scrollTop #switchButton {
-  color:white !important;
+  color: white !important;
 }
 .dark .scrollTop span.logo_text {
   color: white;
 }
-

@@ -151,10 +151,11 @@
               <!-- SEARCH  -->
               <div class="header_search">
                 <!-- search icon  -->
-                <span>
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-                <!-- Button  -->
+                <div id="searchActive" class="search-btn">
+                  <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                </div>
+                
+                <!-- witch theme button  -->
                 <button
                   id="switchButton"
                   class="btn fs-4 text-white border-0"
@@ -163,16 +164,26 @@
                   <i class="fa-regular fa-sun"></i>
                   <i class="fa-regular fa-moon"></i>
                 </button>
+                <!-- close button  -->
+                <div id="searchClose">
+                  <i class="fa fa-close close-btn"></i>
+                  
+                </div>
+                
               </div>
             </div>
           </div>
         </nav>
+        <!-- search input  -->
+        <form>
+          <input type="text" placeholder="Type Something..." class="search-input">
+        </form>
       </div>
     </header>
 
     <main>
       <!-- BANNER  -->
-      <section class="banner col-xs-12">
+      <section class="banner">
         <div class="container">
           <!-- text  -->
           <div class="banner_text text-center">
@@ -227,9 +238,9 @@
       <!-- footer middle  -->
       <div class="footer_middle">
         <div class="container">
-          <div class="footer_middle_main py-5 row align-items-baseline gx-5">
+          <div class="footer_middle_main py-5 row align-items-baseline">
             <!-- content list  -->
-            <div class="middle_content col-3">
+            <div class="middle_content col-4">
               <!-- logo icon  -->
               <div class="middle_icon">
                 <a href="#" class="text-white text-decoration-none">
@@ -243,9 +254,9 @@
                 </a>
               </div>
               <p class="text-secondary lh-base my-4 fs-5">
-                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                Lorem ipsum viverra feugiat. Pellen tesque <br> libero ut justo,
                 ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
-                amet Semper at elit team advisors.
+                amet <br> Semper at elit team advisors.
               </p>
               <a class="brand_logo text-decoration-none me-3" href="#">
                 <i class="fa-brands fa-facebook-f"></i>
@@ -261,7 +272,7 @@
               </a>
             </div>
             <!-- content list ul -->
-            <div class="middle_content_ul second col-3">
+            <div class="middle_content_ul second col-4">
               <h3 class="text-white fw-light mb-4">CONTACT INFO</h3>
               <ul class="text-secondary">
                 <li class="fs-5 lh-lg">
@@ -292,7 +303,7 @@
               </ul>
             </div>
             <!-- content list ul -->
-            <div class="middle_content_ul col-3">
+            <div class="middle_content_ul col-2">
               <h3 class="text-white fw-light mb-4">CATEGORIES</h3>
               <ul class="text-secondary">
                 <li class="fs-5 lh-lg">
@@ -309,7 +320,7 @@
               </ul>
             </div>
             <!-- content list ul -->
-            <div class="middle_content_ul col-3">
+            <div class="middle_content_ul col-2">
               <h3 class="text-white fw-light mb-4">META</h3>
               <ul class="text-secondary">
                 <li class="fs-5 lh-lg">
