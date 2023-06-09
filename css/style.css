@@ -54,12 +54,11 @@ header {
   width: 40px;
   position: absolute;
   bottom: -55px;
-  opacity:0;
+  opacity: 0;
   cursor: pointer;
   pointer-events: none;
   transform: rotate(90deg);
   transition: all 0.5s ease-in-out;
-  
 }
 /* input search  */
 header form .search-input {
@@ -83,20 +82,18 @@ body.nav-search .header_search .search-btn {
   transform: scale(80);
 }
 body.nav-search .header_search .search-btn .icon-search {
-  opacity:0;
+  opacity: 0;
 }
 /* search bar will close when click on search close  */
 body.nav-search .header_search .close-btn {
   opacity: 1;
   pointer-events: all;
   transform: rotate(0);
-  
 }
 body.nav-search header form .search-input {
   opacity: 1;
   pointer-events: all;
   transform: translateX(0);
-
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -143,7 +140,7 @@ a span.second_text {
 .carousel .carousel-inner .carousel-item {
   position: relative;
   width: 100%;
-  height:90vh;
+  height: 90vh;
 }
 /* overlay test  */
 .carousel .carousel-inner .carousel-item .carousel_overlay {
@@ -171,7 +168,6 @@ a span.second_text {
   background-repeat: no-repeat;
   background-position: top center;
   object-fit: cover;
-  
 }
 
 .carousel .carousel-inner .carousel-item .carousel_text {
@@ -181,6 +177,7 @@ a span.second_text {
   z-index: 1;
 }
 .carousel .carousel-inner .carousel-item .carousel_text h1 {
+  
   font-size: 65px;
   font-weight: bold;
 }
@@ -239,6 +236,7 @@ a span.second_text {
 .about .about_content {
   display: flex;
   align-items: center;
+  padding: 100px 0;
 }
 /* LEFT part  */
 .about .about_content .about_left p.sub_title {
@@ -275,6 +273,7 @@ a span.second_text {
 
 /* CREATIVE  */
 .creative {
+  padding: 100px 0;
   background-color: #f7f7f7;
 }
 /* left part  */
@@ -310,7 +309,6 @@ a span.second_text {
 }
 .creative .creative_content .creative_right .creative_right_item {
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: all 0.5s;
 }
 .creative .creative_content .creative_right .creative_right_item:hover {
@@ -330,6 +328,9 @@ a span.second_text {
 }
 
 /* SERVICE */
+.service {
+  padding: 100px 0;
+}
 .service .container h3 {
   font-size: 35px;
   font-weight: 600;
@@ -371,19 +372,19 @@ a span.second_text {
   font-weight: 600;
   padding: 10px 30px;
   border-radius: 10px;
-  border: 1px solid transparent;
-  background-color: white;
+  border: none;
+  background-color: transparent;
   transition: 0.5s;
 }
 .service .service_list_item button:hover {
   color: #009f4d;
-  border: 1px solid #009f4d;
 }
 
 /* GALLERY  */
 .gallery {
   background-color: #f8f9fa;
   overflow: hidden;
+  padding: 100px 0;
 }
 .gallery .gallery_title p {
   color: #7e7d7d;
@@ -442,15 +443,26 @@ a span.second_text {
 
 /* gallery list brands part  */
 .gallery .gallery_brands {
-  border-top: 1px solid rgb(221, 219, 219);
+  border-top: 1px solid rgba(128, 128, 128, 0.212);
+
 }
-.gallery .gallery_brands .gallery_brands_item img {
+.gallery .gallery_brands .gallery_brands-cover .gallery_brands_item img {
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
+  
+}
+.gallery_brands-cover {
+  max-width: 1140px;
+  margin: auto;
 }
 
+
+
 /* SUCCESS  */
+.success {
+  padding: 100px 0;
+}
 .success .success_content .success_left {
   width: 50%;
 }
@@ -667,6 +679,7 @@ a span.second_text {
 
 /* FEEDBACK */
 .feedback {
+  padding: 100px 0;
   background-color: #f8f9fa;
 }
 .feedback .feedback_title p {
@@ -677,6 +690,7 @@ a span.second_text {
 .feedback .feedback_title h3 {
   font-size: 35px;
   font-weight: 600;
+  margin-bottom:100px;
   color: #3f3a64;
 }
 .feedback_carousel .owl_item .owl_item_content {
@@ -720,6 +734,12 @@ a span.second_text {
 }
 
 /* NEWS */
+.news {
+  padding: 100px 0;
+}
+.news .news_title {
+  margin-bottom: 50px;
+}
 .news .news_title p {
   color: #7e7d7d;
   font-size: 14px;
@@ -754,6 +774,8 @@ a span.second_text {
 .news_content .news_content_item .news_content_text a.sub_title {
   color: #adadad;
   font-size: 17px;
+  display: inline-block;
+  margin-bottom: 15px;
 }
 .news_content .news_content_item .news_content_text a.main_title {
   color: #3f3a64;
@@ -765,7 +787,7 @@ a span.second_text {
   color: #009f4d;
 }
 .news_content .news_content_item .news_content_copyright {
-  border-top: 1px solid rgb(231, 231, 231);
+  border-top: 1px solid rgb(128 128 128 / 21%);
 }
 .news_content .news_content_item .news_content_copyright .copyright_left a {
   text-decoration: none;
@@ -786,6 +808,10 @@ a span.second_text {
 }
 .news_content .news_content_item .news_content_copyright .copyright_right p {
   color: #7e7d7d;
+}
+.news_content .news_content_item .news_content_copyright .copyright_left p a img {
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /* FOOTER  */
@@ -901,7 +927,6 @@ a.back_to_top {
   opacity: 1;
 }
 
-
 /* scroll function  */
 .scrollTop {
   background-color: white;
@@ -938,8 +963,6 @@ a.back_to_top {
 .dark .scrollTop span.logo_text {
   color: white;
 }
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* darklight theme  */
 /* light theme  */
@@ -957,4 +980,139 @@ a.back_to_top {
 }
 .dark #switchButton .fa-moon {
   display: none;
+}
+
+/* CAROUSEL  */
+.dark .carousel .carousel-inner .carousel-item .carousel_overlay {
+  background-color: rgb(29 42 55 / 78%);
+}
+.dark .carousel .shape path {
+  fill: #151421;
+}
+.dark .carousel button.carousel-control-prev {
+  background-color: #151421;
+  border: 1px solid grey;
+}
+.dark .fa-arrow-left {
+  color: white !important;
+}
+.dark .carousel button.carousel-control-next {
+  background-color: #151421;
+  border: 1px solid grey;
+}
+.dark .fa-arrow-right {
+  color: white !important;
+}
+/* ABOUT  */
+.dark .about {
+  background-color: #151421;
+}
+.dark .about .about_content .about_left h3 {
+  color: white;
+}
+.dark .about .about_content .about_left ul li a {
+  color: white;
+}
+.dark .about .about_content .about_left p {
+  color: #c2c2c2;
+}
+/* CREATIVE  */
+.dark .creative {
+  background-color: #100f19;
+}
+.dark .creative .creative_content .creative_left h3 {
+  color: white;
+}
+.dark .creative .creative_content .creative_left p {
+  color: #c2c2c2;
+}
+.dark .creative .creative_content .creative_right .creative_right_item {
+  background-color: #151421 !important;
+}
+.dark .creative .creative_content .creative_right .creative_right_item p {
+  color: white;
+}
+.dark .creative .creative_content .creative_right .creative_right_item p:hover {
+  color: #009f4d;
+}
+/* SERVICE  */
+.dark .service {
+  background-color: #151421;
+}
+.dark .service .container h3 {
+  color: white;
+}
+.dark .service .service_list_item a {
+  background-color: #151421;
+  color: white;
+}
+.dark .service .service_list_item a:hover {
+  color: #009f4d;
+}
+.dark .service .service_list_item p {
+  color: #c2c2c2;
+}
+.dark .service .service_list_item button {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.dark .service .service_list_item button:hover {
+  color: #009f4d;
+}
+/* GALLERY  */
+.dark .gallery {
+  background-color: #100f19;
+}
+.dark .gallery .gallery_title h3 {
+  color: white;
+}
+/* SUCCESS  */
+.dark .success {
+  background-color: #151421;
+}
+.dark .success .success_content .success_right h3 {
+  color: white;
+}
+.dark .success_item_title {
+  color: white;
+}
+/* FEEDBACK  */
+.dark .feedback {
+  background-color: #100f19;
+}
+.dark .feedback .feedback_title h3 {
+  color: white;
+}
+.dark .owl_item .sub_title {
+  color: #c2c2c2;
+}
+.dark .owl_item .owl_item_content .owl_item_text h4 {
+  color: white;
+}
+.dark .owl_item .owl_item_content .owl_item_text p {
+  color: #c2c2c2;
+}
+/* NEWS  */
+.dark .news {
+  background-color:#151421;
+}
+.dark .news .news_title h3 {
+  color: white;
+}
+.dark .news_content .news_content_item .news_content_text a.main_title {
+  color:white
+}
+.dark .news_content .news_content_item .news_content_text a.main_title:hover {
+  color: #009f4d;
+}
+.dark .news_content .news_content_item .news_content_copyright .copyright_left a {
+  color: white;
+}
+.dark .news_content .news_content_item .news_content_copyright .copyright_left a:hover {
+  color:#009f4d;
+}
+.dark .news_content .news_content_item {
+  border: 1px solid rgb(128 128 128 / 21%);
+  border-radius: 10px;
 }
