@@ -25,3 +25,8 @@ document.getElementById("searchActive").onclick = function () {
 document.getElementById("searchClose").onclick = function () {
   document.getElementById("myMain").classList.remove("nav-search");
 };
+
+// searchbav appear when click nav
+document.getElementById("navBar-1").onclick = function () {
+  document.getElementById("myHeader").classList.toggle("active");
+};
