@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact Us - Corp Vision</title>
+    <title>404 page - Corp Vision</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- GG font JOST -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
     />
 
     <!-- FontAwesome 6.2.0 CSS -->
@@ -24,6 +16,14 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+
+    <!-- GG font JOST -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
 
     <!-- (Optional) Use CSS or JS implementation -->
@@ -43,7 +43,7 @@
     />
 
     <!-- My CSS  -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./404.css" />
   </head>
 
   <body id="myMain">
@@ -105,7 +105,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle fw-bold text-uppercase text-secondary"
+                    class="nav-link active dropdown-toggle fw-bold text-uppercase text-secondary"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -123,8 +123,8 @@
                     </li>
                     <li>
                       <a
-                        class="dropdown-item fw-bold text-secondary d-inline-block pe-5 py-2 ps-3"
-                        href="../404_page/index.html"
+                        class="dropdown-item active fw-bold text-success d-inline-block pe-5 py-2 ps-3"
+                        href="../404_page/404.html"
                         >404 PAGE</a
                       >
                     </li>
@@ -146,8 +146,8 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link text-secondary active fw-bold text-uppercase"
-                    href="../contact_page/index.html"
+                    class="nav-link text-secondary fw-bold text-uppercase"
+                    href="../contact_page/contact.html"
                     >contact</a
                   >
                 </li>
@@ -193,163 +193,40 @@
         <div class="container">
           <!-- text  -->
           <div class="banner_text text-center">
-            <h2>Contact Us</h2>
-            <p>We are an agency located in New York</p>
+            <h2>Error Page</h2>
+            <p>Page cannot be found</p>
           </div>
           <div class="banner_overlay"></div>
         </div>
       </section>
 
-      <!-- CONTACT 1 -->
-      <section class="contact_1 py-5">
-        <div class="container">
-          <!-- title  -->
-          <div class="cont1_title text-center mb-5">
-            <h3>We are a full-service creative agency</h3>
-            <p>
-              Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
-              nisi ac sed, lacinia est. Quisque ut lectus <br />
-              consequat, eros et.
-            </p>
-          </div>
-          <!-- content  -->
-          <div class="cont1_content row justify-content-sm-center g-4">
-            <!-- item  -->
-            <div class="cont1_item col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="cont1_item_box">
-                <!-- icon  -->
-                <div class="cont1_icon">
-                  <span>
-                    <i class="fa fa-map"></i>
-                  </span>
-                </div>
-                <!-- text  -->
-                <div class="cont1_text">
-                  <h4>Our Location:</h4>
-                  <p>
-                    Corp Vision, 343 marketing, #21 <br />
-                    cravel 1st street, NY - 62617.
-                  </p>
-                </div>
+      <!-- CONTENT  -->
+      <section class="error_content">
+        <div class="container error">
+          <div class="error_cover">
+            <div class="error_main row">
+              <!-- left  -->
+              <div class="left_content col-12 col-sm-12 col-md-6">
+                <img src="../img/error.svg" alt="..." />
               </div>
-            </div>
-            <!-- item  -->
-            <div class="cont1_item col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="cont1_item_box">
-                <!-- icon  -->
-                <div class="cont1_icon">
-                  <span>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                  </span>
-                </div>
-                <!-- text  -->
-                <div class="cont1_text">
-                  <h4>Give us a call</h4>
-                  <p>
-                    <a
-                      class="d-block text-decoration-none text-secondary"
-                      href="tel:+12 404-11-22-89"
-                      >+12 404-11-22-89</a
-                    >
-                    <a
-                      class="d-block text-decoration-none text-secondary"
-                      href="tel:+12 404-11-22-99"
-                      >+12 404-11-22-99</a
-                    >
-                  </p>
-                </div>
+              <!-- right  -->
+              <div class="right_content col-12 col-sm-12 col-md-6">
+                <h1>404</h1>
+                <h3>Something's Missing</h3>
+                <p>
+                  The page you are looking for was moved, removed, renamed or
+                  never existed.
+                </p>
+                <form>
+                  <input type="text" placeholder="Search" />
+                  <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+                <a href="#">
+                  <i class="fa-solid fa-left-long"></i> Go back to Home
+                </a>
               </div>
-            </div>
-            <!-- item  -->
-            <div class="cont1_item col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="cont1_item_box">
-                <!-- icon  -->
-                <div class="cont1_icon">
-                  <span>
-                    <i class="fa-regular fa-envelope"></i>
-                  </span>
-                </div>
-                <!-- text  -->
-                <div class="cont1_text">
-                  <h4>Help Desk</h4>
-                  <p>
-                    <a
-                      class="d-block text-decoration-none text-secondary"
-                      href="mailto:company@gmail.com"
-                      >company@gmail.com</a
-                    >
-                    <a
-                      class="d-block text-decoration-none text-secondary"
-                      href="mailto:support@gmail.com"
-                      >support@gmail.com</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- map  -->
-          <iframe
-            class="mt-5"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280002074!2d-74.14448754461243!3d40.69763123334598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1685694393635!5m2!1sen!2s"
-            width="100%"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </section>
-
-      <!-- CONTACT 2  -->
-      <section class="contact_2">
-        <div class="container">
-          <div class="contact_2_cover">
-            <!-- title  -->
-            <div class="cont2_title text-center mb-5">
-              <h3>Let’s talk about your project</h3>
-              <p>
-                We have made it easy for clients to reach us and get their
-                solutions weaved
-              </p>
-            </div>
-            <!-- content  -->
-            <div class="cont2_content">
-              <form>
-                <!-- input part  -->
-                <div class="cont2_input">
-                  <input class="form-control" type="text" placeholder="Name" />
-                  <input
-                    class="form-control"
-                    type="number"
-                    placeholder="Your Phone Number"
-                  />
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Email*"
-                  />
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Subject"
-                  />
-                </div>
-                <!-- textarea  -->
-                <textarea
-                  class="form-control"
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
-                  placeholder="Your Opinion*"
-                ></textarea>
-                <!-- button  -->
-                <div class="cont2_button text-end mb-5 text-sm-center text-lg-end">
-                  <button class="btn btn-success">Submit Here</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -500,8 +377,8 @@
     <!-- back to top script  -->
     <script src="../js/back-to-top-master/assets/js/main.js"></script>
     <script src="../js/back-to-top-master/assets/js/util.js"></script>
-    
-    <!-- light dark theme script  -->
+
+    <!-- dark light theme script  -->
     <script src="../js/light-dark-theme/index.js"></script>
   </body>
 </html>
