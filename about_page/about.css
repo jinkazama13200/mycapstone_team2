@@ -1085,12 +1085,12 @@ a.back_to_top {
   }
   /* COMPANY part */
   .company_top .company_left .company_img .img_shape {
-    width: 420px;
-    height: 420px;
-    top:50px;
+    width: 217px;
+    height: 360px;
+    top:-15px;
   }
   .company_top .company_left .company_img .img_text_box {
-    right: calc(100% - 400px);
+    right: calc(100% - 360px);
   }
   .company_top .company_right h3 {
     font-size: 28px;
